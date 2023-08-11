@@ -3,19 +3,14 @@
 [![CLOUD](https://img.shields.io/badge/CLOUD-ALL-blue?logo=googlecloud&style=for-the-badge)](https://cloud.google.com/databricks)
 [![POC](https://img.shields.io/badge/POC-10_days-green?style=for-the-badge)](https://databricks.com/try-databricks)
 
-## Business Problem
-<List of the business use case the solution accelerator address>
+## RFM Segmentation
+Not every customer has the same revenue potential for a given retail organization.  By acknowledging this fact, retailers can better tailer their engagement to ensure the profitability of their relationship with a customer.  But how do we distinguish between higher and lower value customers? And now might we identify specific behaviors to address in order to turn good customers into great ones?
 
-## Scope
-<How we expect the user to use this content>
+Today, we often address this concern with an estimation of customer lifetime value (CLV).  But while CLV estimations can be incredibly helpful, we often don't need precise revenue estimates when deciding which customers to engage with which offers.  Instead, a lightweight approach that examines the recency, frequency and (per-interaction) monetary value of a given customer can go a long way to divide customers into groups of higher, lower and in-between value, and this is exactly what the practice of [RFM segmentation](https://link.springer.com/content/pdf/10.1057/palgrave.jdm.3240019.pdf) provides.
 
+Pre-dating the formal CLV techniques frequently used today, RFM segmentation remains surprisingly popular with marketing teams looking to quickly organize customers into value-aligned groupings.  In this notebook, we want to demonstrate how an RFM segmentation can be performed and operationalized to enable personalized workflows.
 ___
-<john.doe@databricks.com>
-
-___
-
-
-IMAGE TO REFERENCE ARCHITECTURE
+<bryan.smith@databricks.com>
 
 ___
 
@@ -23,7 +18,7 @@ ___
 
 | library                                | description             | license    | source                                              |
 |----------------------------------------|-------------------------|------------|-----------------------------------------------------|
-| PyYAML                                 | Reading Yaml files      | MIT        | https://github.com/yaml/pyyaml                      |
+| openpyxl | Python library to read/write Excel 2010 xlsx/xlsm/xltx/xltm files| MIT | https://pypi.org/project/openpyxl/ |
 
 ## Getting started
 
