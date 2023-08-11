@@ -20,19 +20,15 @@
 
 # DBTITLE 1,Import Required Libraries
 import pyspark.sql.functions as fn
-
 from sklearn.manifold import TSNE
 import matplotlib.pyplot as plt
 import seaborn as sns
-
 from sklearn.preprocessing import KBinsDiscretizer, FunctionTransformer
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
-
 import mlflow
-
 import numpy as np
 import pandas as pd
 
@@ -521,6 +517,13 @@ display(clusters_pd)
 
 # DBTITLE 1,Assign Model Name
 model_name = 'rfm_segmentation'
+
+# COMMAND ----------
+
+# DBTITLE 1,Set up mlflow experiment
+# to ensure this notebook runs in jobs
+username = dbutils.notebook.entry_point.getDbutils().notebook().getContext().userName().get()
+_ = mlflow.set_experiment('/Users/{}/{}'.format(username, model_name))
 
 # COMMAND ----------
 
